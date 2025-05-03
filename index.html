@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chris Horne | Freelance Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', sans-serif;
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
       background-color: #f9f9f9;
       color: #333;
     }
@@ -38,11 +38,21 @@
       font-size: 0.9rem;
       color: #666;
     }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 0.8s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <header>
+  <header class="fade-in">
     <h1>Chris Horne</h1>
     <p>DevOps-lite & Frontend Developer</p>
     <nav>
@@ -53,12 +63,12 @@
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" class="fade-in">
     <h2>About</h2>
     <p>I help founders, creators, and small teams build fast websites and strong foundations with modern DevOps tools and frontend frameworks like React.</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="fade-in">
     <h2>Projects</h2>
     <div class="project">
       <h3><a href="#">Nomad Nutrition Landing Page</a></h3>
@@ -74,7 +84,7 @@
     </div>
   </section>
 
-  <section id="services">
+  <section id="services" class="fade-in">
     <h2>Services</h2>
     <ul>
       <li>Landing Page Setup – $250–$400</li>
@@ -83,13 +93,13 @@
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:jackandcode82gmail.com">jackandcode82gmail.com</a></p>
+    <p>Email: <a href="mailto:your.email@gmail.com">your.email@gmail.com</a></p>
     <p>Calendly: <a href="https://calendly.com/jackandcode82">Schedule a Call</a></p>
   </section>
 
-  <footer>
+  <footer class="fade-in">
     <p>&copy; 2025 Chris Horne. All rights reserved.</p>
   </footer>
 </body>
