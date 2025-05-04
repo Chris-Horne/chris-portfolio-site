@@ -74,3 +74,120 @@ img {
     margin: 0.5rem 0;
   }
 }
+
+/* Skill Bars */
+.skill {
+  margin: 1rem 0;
+}
+
+.skill span {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.bar {
+  background: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.fill {
+  height: 100%;
+  background: #007acc;
+  width: 0;
+  animation: fillBar 2s forwards;
+}
+
+@keyframes fillBar {
+  to { width: var(--fill-width, 100%); }
+}
+
+.fill.w-90 { animation: fillBar90 2s forwards; }
+.fill.w-80 { animation: fillBar80 2s forwards; }
+.fill.w-70 { animation: fillBar70 2s forwards; }
+.fill.w-75 { animation: fillBar75 2s forwards; }
+
+@keyframes fillBar90 { to { width: 90%; } }
+@keyframes fillBar80 { to { width: 80%; } }
+@keyframes fillBar70 { to { width: 70%; } }
+@keyframes fillBar75 { to { width: 75%; } }
+
+.resume-button {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background-color: #007acc;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #005b99;
+}
+
+#themeToggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.dark a {
+  color: #66ccff;
+}
+
+body.dark .bar {
+  background: #444;
+}
+
+body.dark .fill {
+  background: #66ccff;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.theme-toggle label {
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark a {
+  color: #80d0ff;
+}
+
+body.dark .bar {
+  background: #2c2c2c;
+}
+
+body.dark .fill {
+  background: #80d0ff;
+}
+
+body.dark footer {
+  color: #999;
+}

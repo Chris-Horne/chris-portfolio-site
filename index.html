@@ -11,6 +11,12 @@
 </head>
 <body>
   <header class="fade-in">
+
+  <div class="theme-toggle">
+    <input type="checkbox" id="darkModeSwitch">
+    <label for="darkModeSwitch">🌙</label>
+  </div>
+
     <h1>Chris Horne</h1>
     <p>DevOps-lite & Frontend Developer</p>
     <nav>
@@ -52,14 +58,64 @@
     </ul>
   </section>
 
+
+
+  <section id="skills" class="fade-in">
+    <h2>Skills</h2>
+    <div class="skill">
+      <span>HTML & CSS</span>
+      <div class="bar"><div class="fill w-90"></div></div>
+    </div>
+    <div class="skill">
+      <span>React.js</span>
+      <div class="bar"><div class="fill w-80"></div></div>
+    </div>
+    <div class="skill">
+      <span>Docker</span>
+      <div class="bar"><div class="fill w-70"></div></div>
+    </div>
+    <div class="skill">
+      <span>AWS + S3</span>
+      <div class="bar"><div class="fill w-75"></div></div>
+    </div>
+  </section>
+
+
+
+  <section id="testimonials" class="fade-in">
+    <h2>Testimonials</h2>
+    <blockquote>
+      <p>"Chris simplified our cloud deployment in a way that finally made sense."</p>
+      <footer>– Jordan A., Startup Founder</footer>
+    </blockquote>
+    <blockquote>
+      <p>"Professional, fast, and communicative. Will hire again."</p>
+      <footer>– Maria K., Project Manager</footer>
+    </blockquote>
+  </section>
+
   <section id="contact" class="fade-in">
     <h2>Contact</h2>
-    <p>Email: <a href="jackandcode82@gmail.com">jackandcode82@gmail.com</a></p>
+    <p>Email: <a href="mailto:jackandcode82@gmail.com">jackandcode82@gmail.com</a></p>
     <p>Calendly: <a href="https://calendly.com/jackandcode82">Schedule a Call</a></p>
+    <p><a href="resume.pdf" download class="resume-button">Download Résumé (PDF)</a></p>
   </section>
 
   <footer class="fade-in">
     <p>&copy; 2025 Chris Horne. All rights reserved.</p>
   </footer>
+
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+
+
+  <script>
+    const switcher = document.getElementById("darkModeSwitch");
+    switcher.addEventListener("change", () => {
+      document.body.classList.toggle("dark", switcher.checked);
+    });
+  </script>
+
 </body>
 </html>
