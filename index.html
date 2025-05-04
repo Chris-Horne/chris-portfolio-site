@@ -104,7 +104,7 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:jackandcode82@gmail.com">jackandcode82@gmail.com</a></p>
     <p>Calendly: <a href="https://calendly.com/jackandcode82">Schedule a Call</a></p>
-    <p><a href="resume.pdf" download class="resume-button">Download Résumé (PDF)</a></p>
+    <p><a href="resume.pdf" download><button class="resume-btn">Download Résumé (PDF)</button></a></p>
   </section>
 
   <footer class="fade-in">
@@ -114,14 +114,23 @@
     
 
 
-  <script>
-    const switcher = document.getElementById("darkModeSwitch");
-    switcher.addEventListener("change", () => {
-      document.body.classList.toggle("dark", switcher.checked);
-    });
-  </script>
-<button id="backToTop" title="Go to top">↑</button>
+  
 
+
+
+
+
+
+
+
+<script>
+  const switcher = document.getElementById("darkModeSwitch");
+  switcher.addEventListener("change", () => {
+    document.body.classList.toggle("dark", switcher.checked);
+  });
+</script>
+
+<button id="backToTop" title="Go to top">↑</button>
 <script>
   const backToTop = document.getElementById("backToTop");
   window.onscroll = () => {
@@ -130,6 +139,22 @@
   backToTop.onclick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+</script>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.bar .fill').forEach(fill => {
+      const match = [...fill.classList].find(cls => cls.startsWith('w-'));
+      if (match) {
+        const percent = match.split('-')[1];
+        fill.style.width = '0';
+        setTimeout(() => {
+          fill.style.transition = 'width 1.5s ease-in-out';
+          fill.style.width = percent + '%';
+        }, 100);
+      }
+    });
+  });
 </script>
 
 </body>

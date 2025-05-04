@@ -23,7 +23,7 @@ Containerized React setup for local development. Fast, lightweight, and great fo
 - **AWS Deployment (S3/Lambda):** $150 flat
 - **Monthly Maintenance (5 hrs):** $250/month
 
-Contact me: [your.email@gmail.com](mailto:your.email@gmail.com)  
+Contact me: [jackandcode82@gmail.com](mailto:jackandcode82@gmail.com)  
 Or schedule a call: [Calendly link]
 
 ---
