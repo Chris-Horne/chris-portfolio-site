@@ -65,3 +65,84 @@ body.dark .fill {
 body.dark footer {
   color: #999;
 }
+
+/* ===== Layout Structure ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #fff;
+  color: #333;
+}
+
+header, section, footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Skill Bars (Non-Dark) ===== */
+.bar {
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.fill {
+  height: 100%;
+  width: 0;
+  background-color: #007acc;
+  transition: width 1s ease-in-out;
+}
+
+/* ===== Projects ===== */
+.project {
+  background: #f5f5f5;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #007acc;
+  border-radius: 4px;
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+/* ===== Contact Form ===== */
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 0.6rem 1rem;
+  background: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #005b99;
+}
