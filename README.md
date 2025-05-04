@@ -24,7 +24,7 @@ Containerized React setup for local development. Fast, lightweight, and great fo
 - **Monthly Maintenance (5 hrs):** $250/month
 
 Contact me: [jackandcode82@gmail.com](mailto:jackandcode82@gmail.com)  
-Or schedule a call: [Calendly link]
+Or schedule a call: https://calendly.com/jackandcode82
 
 ---
 
